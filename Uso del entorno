@@ -1,0 +1,13 @@
+## 🎬 Cómo reproducir archivos Multimedia vía memoria USB
+
+1. Conectamos la memoria USB a nuestro dispositivo Android con ayuda del adaptador OTG.
+2. Copiamos nuestros archivos de música, videos o imágenes que tengamos descargados en el teléfono.
+3. Vamos a la memoria USB, abrimos la carpeta `multimedia` y pegamos los archivos dentro de la subcarpeta que corresponda (`musica`, `videos` o `imagenes`). Ejemplo de ruta: `"multimedia/videos/pelicula.mp4"`.
+4. Desconectamos la memoria USB del dispositivo Android, la conectamos a la consola encendida usando el adaptador OTG y esperamos 5 segundos a que se realice el montaje automático y refrescamos cache desde setting para poder reproducir el contenido directamente desde cada sección multimedia de la consola.
+
+## 🎮 Cómo jugar vía memoria USB 
+
+1. Conectamos la memoria USB a nuestro dispositivo Android con ayuda del adaptador OTG.
+2. Copiamos las ROMs (juegos) que hayamos descargado en el almacenamiento de nuestro teléfono o tableta.
+3. Vamos a la memoria USB, abrimos la carpeta `games_usb` y pegamos los archivos dentro de la carpeta correspondiente al emulador que queramos jugar. Ejemplo de ruta: `"games_usb/ps1/juego.bin"`.
+4. Desconectamos la memoria USB de nuestro dispositivo Android, la conectamos a la consola encendida usando el adaptador OTG, esperamos el montaje de los directorios (5 segundos) y recargamos el caché desde Settings para visualizar los juegos de la memoria USB en sus respectivas secciones.
