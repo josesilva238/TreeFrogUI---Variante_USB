@@ -11,3 +11,21 @@
 2. Copiamos las ROMs (juegos) que hayamos descargado en el almacenamiento de nuestro teléfono o tableta.
 3. Vamos a la memoria USB, abrimos la carpeta `games_usb` y pegamos los archivos dentro de la carpeta correspondiente al emulador que queramos jugar. Ejemplo de ruta: `"games_usb/ps1/juego.bin"`.
 4. Desconectamos la memoria USB de nuestro dispositivo Android, la conectamos a la consola encendida usando el adaptador OTG, esperamos el montaje de los directorios (5 segundos) y recargamos el caché desde Settings para visualizar los juegos de la memoria USB en sus respectivas secciones.
+
+📁 MEMORIA USB (Raíz)
+ ├── 📁 replace
+ │    └── 📂 (Mismos directorios que en la MicroSD pero vacíos)
+ ├── 📁 program_sh
+ │    ├── 📄 update.sh
+ │    ├── 📄 upload.sh
+ │    └── 📄 replace.sh
+ ├── 📁 bg
+ │    └── 🖼️ (Imágenes de carga)
+ ├── 📁 games_usb
+ │    └── 🎮 (Espejo de las carpetas de emuladores para jugar vía memoria USB)
+ ├── 📁 roms
+ │    └── 📥 (Espejo de las carpetas de emuladores para el copiado de contenido vía USB)
+ └── 📁 multimedia (Espejo de los directorios multimedia)
+      ├── 📁 musica
+      ├── 📁 videos
+      └── 📁 imagenes
