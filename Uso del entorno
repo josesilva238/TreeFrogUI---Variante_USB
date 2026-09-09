@@ -24,8 +24,8 @@
  ├── 📁 games_usb
  │    └── 🎮 (Espejo de las carpetas de emuladores para jugar vía memoria USB)
  ├── 📁 roms
- │    └── 📥 (Espejo de las carpetas de emuladores para el copiado de contenido vía USB)
- └── 📁 multimedia (Espejo de los directorios multimedia)
+ │    └── 📥 (Espejo de las carpetas de emuladores y multimedia para el copiado de contenido vía USB)
+ └── 📁 multimedia (Espejo de los directorios multimedia para reproducción via memoria USB)
       ├── 📁 musica
       ├── 📁 videos
       └── 📁 imagenes
