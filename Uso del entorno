@@ -12,7 +12,7 @@
 3. Vamos a la memoria USB, abrimos la carpeta `games_usb` y pegamos los archivos dentro de la carpeta correspondiente al emulador que queramos jugar. Ejemplo de ruta: `"games_usb/ps1/juego.bin"`.
 4. Desconectamos la memoria USB de nuestro dispositivo Android, la conectamos a la consola encendida usando el adaptador OTG, esperamos el montaje de los directorios (5 segundos) y recargamos el caché desde Settings para visualizar los juegos de la memoria USB en sus respectivas secciones.
 
-📁 MEMORIA USB (Raíz)
+📁 MEMORIA USB (Raíz)x
  ├── 📁 replace
  │    └── 📂 (Mismos directorios que en la MicroSD pero vacíos)
  ├── 📁 program_sh
@@ -29,3 +29,30 @@
       ├── 📁 musica
       ├── 📁 videos
       └── 📁 imagenes
+
+## 📥 Cómo copiar juegos de forma automatizada a la MicroSD
+
+Esta función te permite transferir juegos desde tu memoria USB directamente al almacenamiento interno de la consola (tarjeta MicroSD) de forma automática y sin usar una PC.
+
+1. Conectamos la memoria USB a nuestro dispositivo Android con ayuda del adaptador OTG.
+2. Copiamos las ROMs (juegos) descargadas en nuestro teléfono o tableta.
+3. Vamos a la memoria USB, abrimos la carpeta `roms` y pegamos los archivos dentro de la carpeta del emulador correspondiente. Ejemplo de ruta: `"roms/gba/juego.gba"`.
+4. Asegúrate de que **la consola esté completamente apagada**. 
+5. Conectamos la memoria USB a la consola apagada usando el adaptador OTG y luego encendemos la consola.
+6. El sistema detectará los archivos durante el arranque e iniciará de manera automatizada la ejecución del script `upload.sh` en segundo plano para copiar los juegos a la tarjeta MicroSD.
+7. Una vez que termine la transferencia automática y cargue la interfaz, recargamos el caché desde Settings para visualizar las nuevas ROMs ya instaladas en la consola.
+8. En la carpeta roms también hay carpetas multimedia (mp3,videos, image), de modo que también se puede copiar archivos de estas categorías a sus respectivos directorios.
+9. Se recomienda que los juegos de playstation con 2 discos o más, se coloquen dentro de una carpeta con el nombre del juego para mejor organización.
+
+## 🔧 Cómo usar el Sistema de Restauración / Recovery (Beta Funcional) (Reemplazo de momento)
+
+Esta función permite reparar o restaurar archivos esenciales de la interfaz y del sistema operativo. De momento, el sistema solo es capaz de restaurar mediante un respaldo previamente guardado en la memoria USB dentro del directorio `replace`.
+
+1. Conectamos la memoria USB a nuestro dispositivo Android con ayuda del adaptador OTG.
+2. Colocamos los archivos de respaldo limpios (respetando los mismos nombres y directorios que lleva la MicroSD) dentro de la carpeta `replace` en la raíz de la USB. Respetar directorio rootfs (Este directorios no debe ser tocado, de modo que esa carpeta la debemos omitir en nuestro respaldo).
+3. Asegúrate de que **la consola esté completamente apagada**.
+4. Conectamos la memoria USB a la consola apagada usando el adaptador OTG y procedemos a encenderla.
+5. Durante el encendido, el sistema invocará de manera automatizada el script `replace.sh` en segundo plano, ejecutando la inyección y sustitución segura de las carpetas y archivos dañadas por las versiones de respaldo de la USB.
+6. Al finalizar el arranque e iniciar la interfaz, el sistema estará restaurado y listo para usarse con normalidad.
+7. Esta funcion puede tomarse su tiempo dependiendo de cuantos archivos estemos restaurando.
+8. El respaldo debe incluir además de los archivos del sistema base y de TreeFrogUI, los archivos de nuestra variante. No incluir el directorio rootfs en el respaldo. 
