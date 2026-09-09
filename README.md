@@ -1,8 +1,9 @@
-# TreeFrogUI - Variante de Gestión para Android (USB/OTG)
+# TreeFrogUI Archivos de configuración - Variante de Gestión para Android (USB/OTG) 
+**Modificacion basada y orientada al sistema TreeFrogUI del desarrollador zubertowski. "https://github.com/tzubertowski/TreeFrogUI"
 
 Esta modificación está pensada para poder gestionar nuestra consola desde cualquier dispositivo con Android, como teléfonos celulares o tabletas, de forma totalmente independiente y sin la necesidad obligatoria de una computadora.
+Codigo y mejoras creadas por un servidor Jose Silva en colaboración con MartStartIV "https://www.youtube.com/@MartStartIV"
 
----
 
 ## 📌 Compatibilidad
 
