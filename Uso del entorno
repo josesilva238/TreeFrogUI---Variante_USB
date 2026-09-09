@@ -56,3 +56,17 @@ Esta función permite reparar o restaurar archivos esenciales de la interfaz y d
 6. Al finalizar el arranque e iniciar la interfaz, el sistema estará restaurado y listo para usarse con normalidad.
 7. Esta funcion puede tomarse su tiempo dependiendo de cuantos archivos estemos restaurando.
 8. El respaldo debe incluir además de los archivos del sistema base y de TreeFrogUI, los archivos de nuestra variante. No incluir el directorio rootfs en el respaldo. 
+
+
+## 🔄 Cómo actualizar el sistema vía memoria USB
+
+Esta función te permite aplicar actualizaciones oficiales via memoria USB 
+
+1. Conectamos la memoria USB a nuestro dispositivo Android con ayuda del adaptador OTG.
+2. Descargamos el archivo de actualización **`update.zip`** y lo copiamos.
+3. Vamos a la memoria USB y pegamos el archivo **`update.zip`** directamente en la raíz de la memoria (fuera de cualquier carpeta).
+4. Asegúrate de que **la consola esté completamente apagada**.
+5. Conectamos la memoria USB a la consola apagada usando el adaptador OTG y procedemos a encenderla.
+6. Durante el arranque, el sistema invocará de manera automatizada el script `update.sh` en segundo plano, el cual se encargará de descomprimir e instalar los archivos de **`update.zip`** de forma segura en la consola.
+7. Al finalizar el encendido y cargar la interfaz, el sistema ya contará con la nueva versión instalada y lista para usarse. Recargar cache desde setting para refrescar la interfaz.
+
